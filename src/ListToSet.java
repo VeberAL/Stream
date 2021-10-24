@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -12,7 +11,7 @@ public class ListToSet {
             list2.add("3");
             list2.add("2");
             //преобразование в коллекцию Set
-            Set<String> set1 = new HashSet<>(list2);
+            Set<String> set1 = list2.stream().collect(Collectors.toSet());
 
         }
     }
