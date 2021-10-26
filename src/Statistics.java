@@ -7,5 +7,9 @@ public class Statistics {
         IntStream a1 = Stream.of(1,2,5,9).mapToInt(x -> x);
         double a = a1.summaryStatistics().getAverage();
         System.out.println(a);
+        //Сумма элементов
+        IntStream a2 = Stream.of(1,2,5,9).mapToInt(x -> x);
+        a = a2.summaryStatistics().getSum();
+        System.out.println(a);
     }
 }
